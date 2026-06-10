@@ -5,7 +5,7 @@
 
 Video: https://youtu.be/AZ7Uc7IFcnU
 
-Contents — Problem: [§1](#1-why-microseconds-are-worth-money)–[§4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [§5](#5-what-the-team-built-on-top-summary) · Trade-offs: [§6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [References](#references)
+Contents — Problem: [1](#1-why-microseconds-are-worth-money)–[4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [5](#5-what-the-team-built-on-top-summary) · Trade-offs: [6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [References](#references)
 
 ---
 
