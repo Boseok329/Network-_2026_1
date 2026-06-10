@@ -135,7 +135,7 @@ Look at the `1 − ρ` denominator:
 
 Going from a normal load of ρ=0.7 to ρ=0.95 — not even close to saturation —
 multiplies the average wait by about 8×, and the curve keeps steepening.
-`delay_simulator.py` plots this as Figure 1 in the README. It is the same shape
+`delay_simulator.py` plots this curve in the README (§3). It is the same shape
 as the course slide for `La/R → 1`.
 
 The key property for HFT is not the average, though — it is the variance. Even
