@@ -5,7 +5,7 @@
 
 Video: https://youtu.be/AZ7Uc7IFcnU
 
-Contents — Problem: [1](#1-why-microseconds-are-worth-money)–[4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [5](#5-what-the-team-built-on-top-summary) · Trade-offs: [6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [References](#references)
+Contents — Problem: [1](#1-why-microseconds-are-worth-money)–[4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [5](#5-what-the-team-built-on-top-summary) · Trade-offs: [6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [AI usage](#9-ai-usage) · [References](#references)
 
 ---
 
@@ -244,6 +244,32 @@ Treasury event as evidence, and the H1–H3 hypotheses that defined what the res
 of the team measured. I opened the presentation (slides 1–7) and wrote the
 problem-definition material this repository is built on. Sections 5–6 summarize
 my teammates' parts, credited inline.
+
+## 9. AI usage
+
+I used an AI assistant (Claude) while preparing this repository. The substance
+is our own work: the topic, the original Korean problem-definition document,
+the H1–H3 hypotheses, and the experiment design came from me and the team, and
+every measured number in this README comes from our Docker experiment, not from
+a model. AI was used for three things: restructuring my Korean write-up into
+this English tech-blog format, writing the matplotlib script for the two
+charts, and checking the citations.
+
+Representative prompts, as I entered them (in Korean):
+
+- "내가 작성한 HFT 네트워크 지연 문제 정의 문서를 바탕으로 깃허브 README를
+  테크 블로그 형식으로 재구성해줘. Problem, Solutions, Trade-offs 순서로 하고
+  내용 축약하지 마."
+- "트래픽 강도 ρ에 따라 큐잉 지연이 폭발하는 M/M/1 곡선이랑, 우리 팀 실측
+  TCP/UDP P99 결과(375.7µs → 204,812µs)를 그래프로 그리는 matplotlib 코드
+  만들어줘."
+- "2014년 미 국채 flash rally 수치(37bp, 9:33–9:45 ET 16bp 왕복)랑 '1ms =
+  $100M' 주장의 원 출처를 검증해서 인용 형식으로 정리해줘."
+- "해당 내용 전부 영어로 바꿔줘. 번역투 없이."
+- "AI스러운 말투 빼줘. 문장 짧게, 단정적으로 써."
+
+All AI output was reviewed and edited by me before committing. The framing, the
+claims, and the conclusions are mine.
 
 ## Repository structure
 
