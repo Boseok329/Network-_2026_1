@@ -1,23 +1,11 @@
-<div align="center">
+# Where the Microsecond Goes: Network Delay in High-Frequency Trading
 
-# Where the Microsecond Goes
-
-### Network delay in high-frequency trading — and why one lost packet costs 545×
-
-[![Watch the presentation](https://img.shields.io/badge/YouTube-Watch_the_presentation-FF0000?logo=youtube&logoColor=white)](https://youtu.be/AZ7Uc7IFcnU)
-[![Reproduce the figures](https://img.shields.io/badge/Python-delay__simulator.py-3776AB?logo=python&logoColor=white)](delay_simulator.py)
-![Course](https://img.shields.io/badge/DCCS307-Module_5,_Group_07-555)
-
+**DCCS307 Computer Networks · Module 5 Case Study · Group 07**
 **Boseok Kim (김보석) — Problem Lead**
 
-<img src="figures/tcp-udp-p99-explosion.png" width="640" alt="TCP vs UDP P99 under 1% loss — 545× gap">
+Video: https://youtu.be/AZ7Uc7IFcnU
 
-*The project in one chart: measured P99 round-trip time, log scale.
-1% packet loss pushes TCP from 376 µs to 205 ms. UDP does not move.*
-
-</div>
-
-**Contents** — Problem: [§1](#1-why-microseconds-are-worth-money)–[§4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [§5](#5-what-the-team-built-on-top-summary) · Trade-offs: [§6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [References](#references)
+Contents — Problem: [§1](#1-why-microseconds-are-worth-money)–[§4](#4-the-hypothesis-i-handed-to-the-team) · Solutions: [§5](#5-what-the-team-built-on-top-summary) · Trade-offs: [§6](#6-the-trade-off-stated-plainly) · [Conclusion](#7-conclusion) · [My contribution](#8-my-contribution) · [References](#references)
 
 ---
 
@@ -185,8 +173,11 @@ faster you go, and the more your code and hardware have to change.
 **Validation — our own measurement (Son Hanju).** We tested H1 and H2 directly.
 Two Docker containers, a client and a server, talk over a bridge — a real
 interface, not loopback — with `tc netem` injecting reproducible loss on the
-server's egress. 1,000 orders per run, same payload over TCP and UDP. The
-headline chart at the top of this page plots the P99 row of this table:
+server's egress. 1,000 orders per run, same payload over TCP and UDP.
+
+![TCP vs UDP P99 under loss](figures/tcp-udp-p99-explosion.png)
+
+*Measured P99, log scale, from `delay_simulator.py`.*
 
 | Metric | TCP (no loss) | UDP (no loss) | TCP (1% loss) | UDP (1% loss) |
 |---|---|---|---|---|
@@ -263,7 +254,7 @@ my teammates' parts, credited inline.
 ├── figures/
 │   ├── queueing-explosion.png             M/M/1 queueing delay vs ρ
 │   ├── queueing-delay-textbook.png        course slide, La/R → 1
-│   └── tcp-udp-p99-explosion.png          headline chart — measured P99
+│   └── tcp-udp-p99-explosion.png          measured TCP vs UDP P99
 ├── docs/
 │   └── problem-definition-deep-dive.md    full derivation (four delays, M/M/1, TCP/UDP)
 └── CN_Module5_MidpointReport_Group07.pdf  group midpoint report
