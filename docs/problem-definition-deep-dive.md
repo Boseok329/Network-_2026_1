@@ -1,4 +1,4 @@
-# Problem Definition — Deep Dive
+# Problem Definition
 
 **Boseok Kim (Problem Lead) · DCCS307 Computer Networks · Module 5, Group 07**
 
