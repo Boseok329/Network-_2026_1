@@ -1,4 +1,4 @@
-# Where the Microsecond Goes: Network Delay in High-Frequency Trading
+# Network Delay in High-Frequency Trading
 
 **DCCS307 Computer Networks · Module 5 Case Study · Group 07**
 **Boseok Kim (김보석) — Problem Lead**
